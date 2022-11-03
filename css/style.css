@@ -1,0 +1,190 @@
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	max-width: 1920px;
+	background-image: url('../img/01.jpg');
+}
+
+[class*="__container"]{
+	max-width: 810px;
+	margin: 0 auto;
+}
+.sky {
+	position: relative;
+	perspective: 100px;
+}
+h2,h3{
+	font-size: 33px;
+	text-align: center;
+	text-transform: uppercase;
+	color: darkorange;
+	text-shadow: 2px 3px 5px chartreuse;
+	letter-spacing: 8px;
+	padding-top: 10px;
+}
+h2:hover{
+	transform: translate3d(5px,40px,10px) scale(2);
+}
+.sky__body {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 300px;
+	background: rgb(190, 190, 63);
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: inset -5px 5px 10px 10px rgba(0, 0, 0, 0.774);
+}
+.sky__body:hover{
+	transform: scale(1.7);
+	background: rgb(206, 206, 199);
+	box-shadow: inset -5px 5px 10px 10px rgba(0, 0, 0, 0.774);
+}
+.sky__item {
+	display: inline-block;
+	position: absolute;
+	top: 30px;
+	right: 60px;
+	background-image: url('../img/bat-kid.png');
+	width: 100px;
+	height: 190px;
+	visibility: hidden;
+	z-index: 2;
+}
+.sky__body:hover .sky__item{
+	visibility: visible;
+}
+.spider {
+	position: relative;
+}
+.spider__body {
+	position: absolute;
+	top: 600px;
+	left: 0px;
+	width: 400px;
+	height: 300px;
+	background: url('../img/web.jpg');
+	perspective: 300px;
+}
+.spider__item {
+	position: absolute;
+	top: 50px;
+	left: 20;
+	width: 320px;
+	height: 320px;
+	background: url('../img/spider.png') no-repeat;
+}
+.spider__body:hover .spider__item{
+	transform: translate3d(50px,40px,20px) rotate3d(30,40,40,80deg);
+}
+.pumpkin {
+	position: relative;
+}
+.pumpkin__body {
+	position: absolute;
+	top: 400px;
+	left: 415px;
+}
+.pumpkin__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../img/pumpkin.png');
+	width: 300px;
+	height: 300px;
+}
+.pumpkin__body:hover .pumpkin__item{
+	transform: translate(-100px,-200px) skew(20deg,20deg);
+}
+.pumpkin__item::before{
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	display: inline-block;
+	content: 'Booo!';
+	font-size: 35px;
+	color: rgb(209, 56, 0);
+	text-shadow: 2px 2px 2px black;
+	border: 1px dashed black;
+	border-radius: 0 30px 0 30px;
+	padding: 5px;
+}
+.bat {
+	position: relative;
+}
+.bat__body {
+ position: absolute;
+ top: 90px;
+ left: 760px;
+ perspective: 700px;
+ perspective-origin: 0 0;
+}
+.bat__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../img/bat.png');
+	width: 150px;
+	height: 130px;
+}
+.bat__body:hover .bat__item{
+	transform: scaleX(0.5) rotateX(70deg);
+}
+.witch {
+	position: relative;
+}
+.witch__body {
+	position: absolute;
+	top: 260px;
+	right: 70px;
+	background: url('../img/witch02.png') no-repeat;
+	width: 300px;
+	height: 300px;
+	perspective: 300px;
+}
+.witch__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rebeccapurple url('../img/witch01.png') no-repeat;
+	width: 300px;
+	height: 300px;
+	z-index: 2;
+	
+}
+.witch__body:hover .witch__item{
+	transform: rotateY(150deg);
+	backface-visibility: hidden;
+}
+.cats {
+	position: relative;
+}
+.cats__body {
+	position: absolute;
+	top: 545px;
+	left: 980px;
+	width: 95px;
+	height: 100px;
+	background-color: rgba(184, 135, 11, 0.515);
+	transform: skew(-10deg);
+	perspective: 300px;
+	transform-style: preserve-3d;
+}
+.cats__item {
+	position: absolute;
+	top: 0;
+	left: -65px;
+	background: url('../img/cats.png');
+	width: 200px;
+	height: 120px;
+}
+.cats__body:hover .cats__item{
+	transform: rotateY(-150deg);
+}
+h3{
+	position: absolute;
+	top: -75px;
+	left: -25px;
+}
