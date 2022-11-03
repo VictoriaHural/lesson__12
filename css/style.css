@@ -71,7 +71,7 @@ h2:hover{
 .spider__item {
 	position: absolute;
 	top: 50px;
-	left: 20;
+	left: 20px;
 	width: 320px;
 	height: 320px;
 	background: url('../img/spider.png') no-repeat;
